@@ -1,0 +1,71 @@
+body {
+  background-image: url("../img/background.jpeg");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.elem_menu a:hover {
+  color: rgb(129, 0, 0);
+  text-transform: uppercase;
+}
+
+.elem_menu a:active,
+a:link,
+a:visited {
+  color: rgb(227, 227, 227);
+}
+
+#img_top_banner {
+  border-radius: 8px;
+}
+
+.top_banner {
+  order: 1;
+  position: relative;
+  width: 1480px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(227, 227, 227);
+  font-size: 28px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+}
+
+#home {
+  left: 623px;
+}
+#menu {
+  left: 795px;
+}
+#gallery {
+  left: 1074.75px;
+}
+#contacts {
+  left: 1246.75px;
+}
+
+.but_rezervet_galdu {
+  position: absolute;
+  top: 520px;
+  left: 80px;
+  width: 164px;
+  height: 45px;
+  border: rgb(227, 227, 227) solid 2px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  border-radius: 4px;
+  color: rgb(227, 227, 227);
+}
+
+.vertical_middle {
+  margin-block: 10px;
+}
