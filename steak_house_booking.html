@@ -18,6 +18,47 @@
         <h1 id="gallery" class="elem_menu"><a href="steak_house_main.html" target="_self">Gallery</a></h1>
         <h1 id="contacts" class="elem_menu"><a href="steak_house_main.html" target="_self">Contacts</a></h1>
       </div>
+      <div class="form-container">
+        <h2 class="label_reservation" id="label_reservation">Table reservation</h2>
+        <div class="form-labels">
+          <form action="Some action" method="post">
+            <label class="label_reservation" for="name">First name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required />
+            <label class="label_reservation" for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+
+            <label class="label_reservation" for="time">Time:</label>
+            <input type="time" id="time" name="time" required />
+            <label class="label_reservation" for="seats">Number of Seats:</label>
+            <select name="seats" id="seats" required>
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="more">More than four</option>
+            </select>
+          </form>
+        </div>
+        <div class="grid">
+          <input type="radio" id="table1" name="table" value="1" />
+          <label class="table-label" for="table1">Table 1</label>
+          <input type="radio" id="table2" name="table" value="1" disabled />
+          <label class="table-label already_booked" for="table2">Table 2 (Reserved)</label>
+          <input type="radio" id="table3" name="table" value="1" />
+          <label class="table-label" for="table3">Table 3</label>
+          <input type="radio" id="table4" name="table" value="1" />
+          <label class="table-label" for="table4">Table 4</label>
+          <input type="radio" id="table5" name="table" value="1" />
+          <label class="table-label" for="table5">Table 5</label>
+          <input type="radio" id="table6" name="table" value="1" disabled />
+          <label class="table-label already_booked" for="table6">Table 6 (Reserved)</label>
+          <input type="radio" id="table7" name="table" value="1" disabled />
+          <label class="table-label already_booked" for="table7">Table 7 (Reserved)</label>
+          <input type="radio" id="table8" name="table" value="1" />
+          <label class="table-label" for="table8">Table 8</label>
+          <input type="radio" id="table9" name="table" value="1" />
+          <label class="table-label" for="table9">Table 9</label>
+        </div>
+        <button id="submit_reservation" type="submit">Reserve</button>
+      </div>
     </div>
   </body>
 </html>

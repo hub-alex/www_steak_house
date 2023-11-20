@@ -5,6 +5,10 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  width: 1420 px;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
 }
 
 .elem_menu a:hover {
@@ -23,9 +27,7 @@ a:visited {
 }
 
 .top_banner {
-  order: 1;
   position: relative;
-  width: 1480px;
   margin: auto;
   padding-top: 20px;
 }
@@ -68,4 +70,99 @@ h1 {
 
 .vertical_middle {
   margin-block: 10px;
+}
+
+.info_banner1 {
+  margin: auto;
+  background-color: aliceblue;
+  height: 100px;
+  width: 1420px;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 710px;
+  background-color: #030b15;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-block: 10px;
+}
+
+#label_reservation {
+  font-size: 42px;
+  text-align: center;
+}
+
+.label_reservation {
+  color: white;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.form-labels {
+  padding-top: 15px;
+  width: 96%;
+  text-align: center;
+}
+
+input,
+select {
+  width: 100%;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 6px;
+  margin: 3px 0px 20px 0px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+
+.table-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 30%;
+  border: 2px white solid;
+  height: 90px;
+  margin: 5px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: rgb(2, 185, 2);
+  border: 2px white;
+  border-style: dashed;
+}
+
+#submit_reservation {
+  text-align: center;
+  margin-top: 10px;
+  width: 96%;
+  height: 40px;
+  background-color: rgb(2, 185, 2);
+  cursor: pointer;
+  padding-block: 5px;
+  font-size: 16px;
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
+
+.already_booked {
+  background-color: #030b15;
+  color: brown;
 }
