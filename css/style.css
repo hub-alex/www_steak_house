@@ -5,7 +5,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 1420 px;
+  width: 100%;
   align-items: center;
   gap: 20px;
   padding: 10px;
@@ -26,7 +26,7 @@ a:visited {
   border-radius: 8px;
 }
 
-.top_banner {
+header {
   position: relative;
   margin: auto;
   padding-top: 20px;
@@ -124,6 +124,7 @@ select {
   flex-flow: row wrap;
   justify-content: space-between;
   padding-block: 10px;
+  width: 96%;
 }
 
 .table-label {
@@ -165,4 +166,37 @@ input[type="radio"]:checked + label {
 .already_booked {
   background-color: #030b15;
   color: brown;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  width: 1420px;
+  margin: auto;
+  padding: 0px;
+}
+
+.gallery {
+  display: grid;
+  background-color: aliceblue;
+  height: 300px;
+  /* border: 2px solid white; */
+  /* padding: 30px; */
+}
+
+#h2_g {
+  width: 1420px;
+  margin: auto;
+}
+
+#h2_g h2 {
+  text-align: left;
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  padding: 0px;
+  /* margin: auto; */
+  /* border: solid px black; */
+  /* background-color: white; */
 }
