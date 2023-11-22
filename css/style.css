@@ -8,72 +8,81 @@ body {
   display: flex;
   flex-direction: column;
   /* width: minmax(300px, auto); */
-  /* width: 1420px; */
   align-items: center;
-  gap: 20px;
-  padding: 10px;
+  gap: 3vw;
+  padding: 0.5vw;
 }
 
 .elem_menu a:hover {
   color: rgb(129, 0, 0);
-  box-shadow: 10px 10px 10px black;
+  text-shadow: 10px 10px 10px black;
 }
 
-.elem_menu a:active,
-a:link,
-a:visited {
+.elem_menu a {
   color: rgb(227, 227, 227);
-  text-shadow: 3px 3px 3px black;
+  /* text-shadow: 3px 3px 3px black; */
+  text-decoration: none;
+}
+
+.elem_menu a:active {
+  text-decoration: double;
+  color: red;
 }
 
 #img_top_banner {
   border-radius: 8px;
-  /* width: 100%; */
   width: 100%;
-  min-width: 630px;
+  min-width: 830px;
 }
 
 header {
   position: relative;
   margin: auto;
-  padding-top: 2vw;
+  width: 100%;
+  min-width: 830px;
+  max-width: 1420px;
+  /* padding-top: 1vw; */
 }
-/* header img {
-  width: minmax(100px, 400px);
-} */
 
 h1 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: rgb(227, 227, 227);
-  font-size: 28px;
-  font-weight: 700;
+  margin: 0px;
   position: absolute;
-  top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(227, 227, 227);
+  font-size: 2em;
+  font-weight: 700;
+  top: 2%;
+  transform: translate(-100%, 10%);
 }
 
 #home {
-  left: 623px;
+  position: absolute;
+  right: 60%;
 }
 #menu {
-  left: 795px;
+  position: absolute;
+  right: 45%;
 }
 #gallery {
-  left: 1074.75px;
+  position: absolute;
+  right: 24%;
 }
 #contacts {
-  left: 1246.75px;
+  position: absolute;
+  right: 5%;
+  transform: translate(-80%, 15%);
 }
 
 .but_rezervet_galdu {
   position: absolute;
-  top: 520px;
-  left: 80px;
+  top: 70%;
+  left: 4%;
   width: 164px;
   height: 45px;
   border: rgb(227, 227, 227) solid 2px;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 1.4em;
   border-radius: 4px;
   color: rgb(227, 227, 227);
 }
@@ -179,10 +188,11 @@ input[type="radio"]:checked + label {
 }
 
 .gallery-container {
-  width: 100%;
+  min-width: 830px;
+  max-width: 1420px;
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, auto));
-  grid-auto-rows: minmax(200px, auto);
+  /* grid-auto-rows: minmax(200px, auto); */
   column-gap: 10px;
   row-gap: 6px;
   margin: 0px auto;
