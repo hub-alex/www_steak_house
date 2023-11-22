@@ -5,9 +5,9 @@ body {
 }
 
 .container {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  width: 100%;
+  width: 1420px;
   align-items: center;
   gap: 20px;
   padding: 10px;
@@ -27,9 +27,11 @@ a:visited {
 
 #img_top_banner {
   border-radius: 8px;
+  width: 100%;
 }
 
 header {
+  width: 100%;
   position: relative;
   margin: auto;
   padding-top: 10px;
