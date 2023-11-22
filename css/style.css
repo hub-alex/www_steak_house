@@ -30,6 +30,7 @@ a:visited {
 }
 
 header {
+  width: 100%;
   position: relative;
   margin: auto;
   padding-top: 10px;
