@@ -44,7 +44,7 @@ header {
   /* padding-top: 1vw; */
 }
 
-h1 {
+header h1 {
   margin: 0px;
   position: absolute;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -234,4 +234,69 @@ input[type="radio"]:checked + label {
   margin: 0;
   padding: 0px;
   /* text-shadow: 2px 3px 4px #030b15; */
+}
+
+.container_menu > * {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.container_menu {
+  max-width: 1420px;
+  border-radius: 4px;
+  background-color: whitesmoke;
+}
+
+.container_menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.category_menu h1 {
+  position: relative;
+  padding: 0px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: "Sofia", sans-serif;
+  font-size: 4em;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+
+.food_name a {
+  color: black;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.food_price {
+  position: relative;
+  bottom: 10px;
+  background-color: rgb(129, 0, 0);
+  padding: 13px;
+  clip-path: circle();
+  font-size: 1.2em;
+  font-weight: 400;
+  color: aliceblue;
+  margin-bottom: 2px;
+}
+.food_descript {
+  padding-bottom: 50px;
+  padding-left: 35px;
+  font-size: 1.6em;
+}
+
+span.material-symbols-outlined {
+  position: relative;
+  left: -15px;
+  top: 7px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 60px;
 }
