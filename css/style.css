@@ -257,6 +257,7 @@ input[type="radio"]:checked + label {
 }
 
 .category_menu h1 {
+  z-index: 1;
   position: relative;
   padding: 0px;
   text-align: center;
@@ -268,26 +269,27 @@ input[type="radio"]:checked + label {
   /* background-color: aquamarine; */
 }
 
-.food_name a {
+li.food_name > a {
+  text-decoration: underline;
   color: black;
   font-size: 1.8em;
   font-weight: bold;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
-.food_price {
+li.food_price {
   position: relative;
-  bottom: 12px;
+  bottom: 10px;
   background-color: rgb(129, 0, 0);
-  padding: 12px;
+  padding: 10px;
   clip-path: circle();
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 400;
   color: aliceblue;
 }
 .food_descript {
   width: 100%;
-  margin-top: -5px;
+  /* margin-top: 0px; */
   padding-bottom: 30px;
   padding-left: 35px;
   font-size: 1.2em;
@@ -295,9 +297,19 @@ input[type="radio"]:checked + label {
 
 span.material-symbols-outlined {
   position: relative;
-  left: -10px;
-  top: 7px;
+  left: -12px;
+  top: 5px;
   padding: 0px;
   margin: 0px;
-  font-size: 1em;
+  font-size: 0.7em;
+  color: black;
+}
+
+span.food_name_numb {
+  position: relative;
+  bottom: 2px;
+  font-size: 1.1em;
+  color: gray;
+  padding-right: 13px;
+  font-style: italic;
 }
