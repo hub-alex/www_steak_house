@@ -263,40 +263,41 @@ input[type="radio"]:checked + label {
   margin-top: 0px;
   margin-bottom: 5px;
   font-family: "Sofia", sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   width: 100%;
   /* background-color: aquamarine; */
 }
 
 .food_name a {
   color: black;
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: bold;
   padding-right: 10px;
 }
 
 .food_price {
   position: relative;
-  bottom: 10px;
+  bottom: 12px;
   background-color: rgb(129, 0, 0);
-  padding: 13px;
+  padding: 12px;
   clip-path: circle();
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
   color: aliceblue;
-  margin-bottom: 2px;
 }
 .food_descript {
-  padding-bottom: 50px;
+  width: 100%;
+  margin-top: -5px;
+  padding-bottom: 30px;
   padding-left: 35px;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 span.material-symbols-outlined {
   position: relative;
-  left: -15px;
+  left: -10px;
   top: 7px;
   padding: 0px;
   margin: 0px;
-  font-size: 60px;
+  font-size: 1em;
 }
