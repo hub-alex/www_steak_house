@@ -19,7 +19,9 @@
         <h1 id="menu" class="elem_menu"><a href="steak_house_menu.html" target="_self">Menu</a></h1>
         <h1 id="gallery" class="elem_menu"><a href="steak_house_gallery.html" target="_self">Gallery</a></h1>
         <h1 id="contacts" class="elem_menu"><a href="steak_house_contacts.html" target="_self">Contacts</a></h1>
-        <div class="but_rezervet_galdu"><a href="steak_house_booking.html">Rezervēt galdu</a></div>
+        <div class="but_rezervet_galdu">
+          <p class="vertical_middle"><a href="steak_house_booking.html">Rezervēt galdu</a></p>
+        </div>
       </header>
       <div class="container_menu">
         <ul class="category_menu">
@@ -147,7 +149,7 @@
           </li>
         </ul>
 
-        <ul class="category_menu">
+        <ul class="category_menu container">
           <h1><span class="material-symbols-outlined"> egg_alt </span>Vegetarian Options:</h1>
           <li class="food_name">
             <span class="food_name_numb">13</span>
@@ -198,7 +200,45 @@
         </ul>
       </div>
     </div>
-  </body>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
 
 <!-- ul.category_menu>((h1>span.material-symbols-outlined{name})+(li.food_name>a{Name of food$})+li.food_price+li.food_descript)*6 -->
