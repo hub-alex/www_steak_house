@@ -1,5 +1,7 @@
 body {
   background-image: url("../img/background.jpeg");
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -102,10 +104,12 @@ header h1 {
   text-decoration: none;
 }
 
-div.info_banner1 {
+footer.info_banner1 {
   max-width: 1420px;
   width: 100%;
   background-color: aliceblue;
+  text-align: center;
+  vertical-align: auto;
 }
 
 .form-container {
