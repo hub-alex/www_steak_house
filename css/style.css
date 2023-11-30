@@ -52,6 +52,12 @@ header h1 {
   top: 2%;
   transform: translate(-100%, 10%);
 }
+#logo_main {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  min-width: 80px;
+}
 
 #home {
   position: absolute;
