@@ -108,10 +108,10 @@ header h1 {
 footer.info_banner1 {
   max-width: 1420px;
   width: 100%;
-  background-color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: whitesmoke;
   text-align: center;
   vertical-align: auto;
-  border-radius: 2px;
   margin: 0px;
   padding: 0px;
 }
